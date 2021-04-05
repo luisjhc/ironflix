@@ -25,8 +25,8 @@ const capitalized = (string) =>
 app.locals.title = `${capitalized(projectName)} created with Ironlauncher`;
 
 // 👇 Start handling routes here
-const index = require("./routes/index");
-app.use("/", index);
+const homePage = require("./routes/homePage");
+app.use("/", homePage);
 
 const authRoutes = require("./routes/auth");
 app.use("/auth", authRoutes);
