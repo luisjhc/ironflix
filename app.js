@@ -24,12 +24,23 @@ const capitalized = (string) =>
 
 app.locals.title = `${capitalized(projectName)} created with Ironlauncher`;
 
+app.use((req, res, next) => {
+  if (req.session.user) {
+    res.locals.user = req.session.user;
+  }
+  next();
+});
+
 // 👇 Start handling routes here
 const homePage = require("./routes/homePage");
 app.use("/", homePage);
 
 const authRoutes = require("./routes/auth");
 app.use("/auth", authRoutes);
+
+const profileRoutes = require("./routes/profile");
+app.use("/profile", profileRoutes);
+
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);

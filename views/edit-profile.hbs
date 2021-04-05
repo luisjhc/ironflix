@@ -1,0 +1,19 @@
+<h3>Welcome to your edit page</h3>
+
+{{#with user}}
+
+<form method="POST" action="/profile/edit">
+  <label>Username:</label>
+  <input name="username" value="{{username}}">
+  <br>
+  <label>Bio:</label>
+  <input name="bio" value="{{bio}}">
+  <br>
+  <label>Email:</label>
+  <input type="email" value={{email}}>
+
+  <button type="submit">Edit your profile</button>
+</form>
+
+<a href="/profile">Go back to your profile</a>
+{{/with}}

@@ -1,13 +1,16 @@
 <form action="/auth/signup" method="POST">
-   <label> Username
-      <input type="text" name="username">
+   <label> Username:
+      <input type="text" name="username" placeholder="Username" required>
    </label>
-   <label> Password
-      <input type="password" name="password">
+   <label> Password:
+      <input type="password" name="password" placeholder="Password" min="8">
    </label>
-
+   <label> Email:
+      <input type="email" name="email" placeholder="Email" required>
+   </label>
    <button type="submit">Submit</button>
 </form>
 
-
-   
+{{#if errorMessage}}
+<h1 style="color: red;">{{errorMessage}}</h1>
+{{/if}}

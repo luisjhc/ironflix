@@ -4,9 +4,38 @@ const { Schema, model } = require("mongoose");
 const userSchema = new Schema({
   username: {
     type: String,
-    unique: true
+    unique: true,
+    required: true,
   },
-  password: String
+  password: {
+    type: String,
+    required: true,
+  },
+
+  email: {
+    type:String,
+    required: true,
+    unique: true,
+  },
+  
+  age: {
+    type: Number,
+    //required: true,
+  },
+
+  profilePic: {
+    type: String,
+    default: 'https://res.cloudinary.com/dertdncse/image/upload/v1617609719/User/defaultProfilePic_aytzpz.jpg',
+  },
+
+  shortBio: {
+    type: String,
+  },
+
+  prefersDarkMode: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const User = model("User", userSchema);
