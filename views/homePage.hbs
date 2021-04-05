@@ -1,10 +1,24 @@
-<h1>{{title}} 🚀</h1>
-<p>Welcome Ironhacker!</p>
+<h1 id="main-title">Ironflix</h1>
+
+<div class="description-landingPage">
+  <p>Welcome to Ironflix. Explore. Share. Enjoy.</p>
+  <img class="background-img" src="/images/background1.JPG" alt="background">
+</div>
+
+
 {{#if user}}
 <h3>Welcome {{user.username}}</h3>
-<a href="/auth/logout">Logout</a>
-<a href="/profile">Go to profile</a>
+
+<div class="logout-profile-buttons">
+  <a href="/auth/logout">Log Out</a>
+  <a href="/profile">My Profile</a>
+</div>
+
 {{else}}
-<a href="/auth/signup">Signup</a>
-<a href="/auth/login">Login</a>
+
+<div class="signup-login-buttons">
+  <a href="/auth/signup">Sign Up</a>
+  <a href="/auth/login">Log In</a>
+</div>
+
 {{/if}}
