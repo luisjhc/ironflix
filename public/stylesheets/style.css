@@ -88,4 +88,59 @@ video {
   opacity: 0.8;
 }
 
+/* Signup page  */
+
+.signup-form-container {
+  color: #fef9efff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.signup-form {
+  position: absolute;
+  z-index: 1;
+  left: 500px;
+}
+
+/* Styling inputs */
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding: 10px;
+  margin: 10px 10px;
+  /* background-color: rgb(23, 195, 178); */
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 4px rgba(23, 195, 178, 0.5);
+  width: 300px;
+}
+
+::placeholder {
+  color: #17c3b2ff;
+}
+
+.signup-submit-btn {
+  font-size: 20px;
+  color: #fef9efff;
+  background-color: rgb(254, 109, 115);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 0 15px 4px rgba(254, 109, 115, 0.7);
+}
+
+.signup-background-img {
+  height: 700px;
+  width: 500px;
+  border-radius: 20px;
+  position: relative;
+  top: -60px;
+  opacity: 0.7;
+}
+
 /*# sourceMappingURL=style.css.map */
