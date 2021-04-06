@@ -2,18 +2,23 @@
 
 {{#with user}}
 
-<form method="POST" action="/profile/edit">
+<form method="POST" action="/profile/edit" enctype="multipart/form-data">
   <label>Username:</label>
-  <input name="username" value="{{username}}">
+  <input type="text" name="username" value="{{username}}">
   <br>
   <label>Bio:</label>
-  <input name="bio" value="{{bio}}">
+  <input type="text" name="bio" value="{{bio}}">
   <br>
   <label>Email:</label>
-  <input type="email" value={{email}}>
-
+  <input type="email" name="email" value={{email}}>
+  <br>
+  <p>Change your profile pic:</p>
+  <input type="file" name="profilePic" value={{profilePic}}>
+  <br>
+  <br>
   <button type="submit">Edit your profile</button>
 </form>
+<br>
 
 <a href="/profile">Go back to your profile</a>
 {{/with}}
