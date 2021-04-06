@@ -32,15 +32,21 @@ app.use((req, res, next) => {
 });
 
 // 👇 Start handling routes here
+// Home Page Route
 const homePage = require("./routes/homePage");
 app.use("/", homePage);
 
+// Auth Route (login/signup)
 const authRoutes = require("./routes/auth");
 app.use("/auth", authRoutes);
 
+// Profile Route
 const profileRoutes = require("./routes/profile");
 app.use("/profile", profileRoutes);
 
+// All Movies Route
+const moviesRoutes = require("./routes/movies");
+app.use("/movies", moviesRoutes);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);
