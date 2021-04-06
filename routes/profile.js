@@ -16,9 +16,37 @@ router.get("/edit", isLoggedIn, (req, res) => {
 
 router.post("/edit", fileUploader.single('profilePic'), isLoggedIn, (req, res) => {
   const {username, bio, email} = req.body;
+  //const body = {username, email}
+ // you need to turn req.body into a new object, that doesnt hold empty values.
+ /* 
+ {
+   username:"",
+   bio:"important stuff",
+   email:"y@y.com"
+ },
+ {
+  bio:"important stuff",
+   email:"y@y.com"
+ }
+
+ ¨
+ {
+   username: "¨snoopy",
+   email:"ëmail@email.com",
+   bio:""
+ }
+
+ {
+    username: "¨snoopy",
+   email:"ëmail@email.com",
+ }
+
+ body.profilePic = req.file.path
+ */ 
 
   User.findByIdAndUpdate(
     req.session.user._id, 
+    //body,
     {username, shortBio: bio, email, profilePic: req.file.path},
     {new: true}
   ).then((newUser) => {
