@@ -1,21 +1,23 @@
 <div class="signup-form-container">
-
-   <form class="signup-form" action="/auth/signup" method="POST">
-      <label> Username:
-         <input type="text" name="username" placeholder="Username" required>
-      </label>
-      <br>
-      <label> Password:
-         <input type="password" name="password" placeholder="Password" min="8">
-      </label>
-      <br>
-      <label> Email:
-         <input type="email" name="email" placeholder="Email" required>
-      </label>
-      <br>
-      <button class="signup-submit-btn" type="submit">Submit</button>
-   </form>
    <img class="signup-background-img" src="/images/signUp-background.jpeg" alt="signUp-bg">
+
+   <div class="signup-form">
+      <form action="/auth/signup" method="POST">
+         <label> Username:<br>
+            <input type="text" name="username" placeholder="Username" required>
+         </label>
+         <br>
+         <label> Password:<br>
+            <input type="password" name="password" placeholder="Password" min="8">
+         </label>
+         <br>
+         <label> Email:<br>
+            <input type="email" name="email" placeholder="Email" required>
+         </label>
+         <br>
+         <button class="signup-submit-btn" type="submit">Sign up</button>
+      </form>
+   </div>
 
 </div>
 

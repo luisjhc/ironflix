@@ -4,14 +4,8 @@
 --light-sea-green: #17c3b2ff;
 --maximum-yellow-red: #ffcb77ff;
 --floral-white: #fef9efff;
---light-coral: #fe6d73ff;
+--light-coral: #fe6d73ff;*/
 
-/* SCSS HEX */
-/* cg-blue: #227c9dff;
-light-sea-green: #17c3b2ff;
-maximum-yellow-red: #ffcb77ff;
-floral-white: #fef9efff;
-light-coral: #fe6d73ff; */
 
 body {
   margin: 0;
@@ -44,8 +38,6 @@ video {
 #main-title {
   color: rgb(254, 109, 115);
   font-size: 70px;
-  /*text-align: center;*/
-  /* padding-top: 20px; */
 }
 
 .description-landingPage {
@@ -54,8 +46,7 @@ video {
   width: 400px;
   line-height: 1em;
   text-align: center;
-  /*padding-left: 520px;*/
-  margin-top: -50px; /*before it was -30px*/
+  margin-top: -50px;
 }
 
 .signup-login-buttons > a {
@@ -71,18 +62,13 @@ video {
 }
 
 .signup-login-buttons {
-  /*padding-left: 550px;*/
-  /*margin-top: 60px;*/
-  /*position: absolute;*/
   margin-top: -350px;
   z-index: 1;
 }
 
 .background-img {
-  /*position: relative;*/
   height: 450px;
   width: 400px;
-  /*z-index: -1;*/
   padding-bottom: 20px;
   border-radius: 30px;
   opacity: 0.8;
@@ -91,6 +77,10 @@ video {
 /* Signup page  */
 
 .signup-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
   color: #fef9efff;
   font-size: 20px;
   font-weight: bold;
@@ -99,9 +89,11 @@ video {
 }
 
 .signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  z-index: 1;
-  left: 500px;
+  color: #17c3b2ff;
 }
 
 /* Styling inputs */
@@ -136,7 +128,7 @@ input[type="email"] {
 
 .signup-background-img {
   height: 700px;
-  width: 500px;
+  width: 600px;
   border-radius: 20px;
   position: relative;
   top: -60px;
