@@ -1,24 +1,29 @@
-<h1 id="main-title">Ironflix</h1>
+<video src="https://res.cloudinary.com/dertdncse/video/upload/v1617702253/ironflix/edited_rogdgx.mp4" autoplay loop
+  playsinline muted></video>
+<div class="main">
+  <h1 id="main-title">Ironflix</h1>
 
-<div class="description-landingPage">
-  <p>Welcome to Ironflix. Explore. Share. Enjoy.</p>
-  <img class="background-img" src="/images/background1.JPG" alt="background">
+  <div class="description-landingPage">
+    <p>Welcome to Ironflix. Explore. Share. Enjoy.</p>
+    <img class="background-img" src="/images/background1.JPG" alt="background">
+  </div>
+
+
+
+  {{#if user}}
+  <h3>Welcome {{user.username}}</h3>
+
+  <div class="logout-profile-buttons">
+    <a href="/auth/logout">Log Out</a>
+    <a href="/profile">My Profile</a>
+  </div>
+
+  {{else}}
+
+  <div class="signup-login-buttons">
+    <a href="/auth/signup">Sign Up</a>
+    <a href="/auth/login">Log In</a>
+  </div>
+
+  {{/if}}
 </div>
-
-
-{{#if user}}
-<h3>Welcome {{user.username}}</h3>
-
-<div class="logout-profile-buttons">
-  <a href="/auth/logout">Log Out</a>
-  <a href="/profile">My Profile</a>
-</div>
-
-{{else}}
-
-<div class="signup-login-buttons">
-  <a href="/auth/signup">Sign Up</a>
-  <a href="/auth/login">Log In</a>
-</div>
-
-{{/if}}
