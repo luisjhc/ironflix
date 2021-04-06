@@ -20,6 +20,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Landing/Starting Page  */
+
 video {
   object-fit: cover;
   width: 100vw;
@@ -37,7 +39,6 @@ video {
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  
 }
 
 #main-title {
@@ -47,8 +48,6 @@ video {
   /* padding-top: 20px; */
 }
 
-/* Landing/Starting Page  */
-
 .description-landingPage {
   color: rgb(23, 195, 178);
   font-size: 40px;
@@ -56,7 +55,7 @@ video {
   line-height: 1em;
   text-align: center;
   /*padding-left: 520px;*/
-  margin-top: -50px;/*before it was -30px*/
+  margin-top: -50px; /*before it was -30px*/
 }
 
 .signup-login-buttons > a {
@@ -76,6 +75,7 @@ video {
   /*margin-top: 60px;*/
   /*position: absolute;*/
   margin-top: -350px;
+  z-index: 1;
 }
 
 .background-img {
@@ -85,6 +85,7 @@ video {
   /*z-index: -1;*/
   padding-bottom: 20px;
   border-radius: 30px;
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */
