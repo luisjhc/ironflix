@@ -146,9 +146,10 @@ router.post("/login", shouldNotBeLoggedIn, (req, res, next) => {
 router.get("/logout", isLoggedIn, (req, res) => {
   req.session.destroy((err) => {
     if (err) {
-      return res.status(500).render("/", { errorMessage: err.message });
+      return res.status(500).render("auth/login", { errorMessage: err.message });
     }
-    res.redirect("/");
+    res.clearCookie("connect.sid");
+    res.redirect("/movies");
   });
 });
 
