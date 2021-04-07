@@ -11,6 +11,10 @@ const movieSchema = new Schema({
     type: String,
   },
 
+  stars: {
+    type: [String],
+  },
+
   dateOfRelease: Date,
 
   coverPic: {
@@ -21,12 +25,12 @@ const movieSchema = new Schema({
 
   description: {
     type: String,
-    min: 20,
+    // min: 20,
   },
 
   didYouKnow: {
     type: String,
-    min: 20,
+    // min: 20,
   },
 
   // zoomLink: {
