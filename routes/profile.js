@@ -16,7 +16,12 @@ router.get("/edit", isLoggedIn, (req, res) => {
 
 router.post("/edit", fileUploader.single('profilePic'), isLoggedIn, (req, res) => {
   const {username, bio, email} = req.body;
-  //const body = {username, email}
+  const body = {username, shortBio: bio, email, profilePic: req.file.path}
+  for (let key in body) {
+    if(body[key] === null || body[key] === undefined || body[key] === "") {
+      delete body[key];
+    }
+  }
  // you need to turn req.body into a new object, that doesnt hold empty values.
  /* 
  {
@@ -46,8 +51,8 @@ router.post("/edit", fileUploader.single('profilePic'), isLoggedIn, (req, res) =
 
   User.findByIdAndUpdate(
     req.session.user._id, 
-    //body,
-    {username, shortBio: bio, email, profilePic: req.file.path},
+    body,
+    //{username, shortBio: bio, email, profilePic: req.file.path},
     {new: true}
   ).then((newUser) => {
     req.session.user = newUser;
