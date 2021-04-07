@@ -17,7 +17,7 @@ body {
 /* Landing/Starting Page  */
 
 video {
-  object-fit: cover;
+  object-fit:cover;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -85,7 +85,6 @@ video {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  margin-top: 100px;
 }
 
 .signup-form {
@@ -94,6 +93,7 @@ video {
   align-items: center;
   position: absolute;
   color: #227C9D;
+  margin-top: 100px;
 }
 
 /* Styling inputs */
@@ -141,6 +141,50 @@ input[type="email"] {
   position: relative;
   top: -60px;
   opacity: 0.8;
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Log in page */
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  color: #fef9efff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  color: #227C9D;
+  margin-top: 100px;
+  width: 400px;
+}
+
+.login-submit-btn {
+  font-size: 20px;
+  color: #fef9efff;
+  background-color: rgb(254, 109, 115);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 0 15px 4px rgba(254, 109, 115, 0.7);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.login-submit-btn:hover {
+  background-color: #ffcb77ff;
+  color: #fe6d73ff;
+  box-shadow: 0 0 15px 4px #ffcb77ff;
+}

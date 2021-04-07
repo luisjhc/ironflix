@@ -1,10 +1,16 @@
-<form action="/auth/login" method="POST">
-   <label> Username
-      <input type="text" name="username">
-   </label>
-   <label> Password
-      <input type="password" name="password">
-   </label>
+<div class="login-form-container">
+   <video src="https://res.cloudinary.com/dertdncse/video/upload/v1617791056/ironflix/Avengers_edited_gk0wto.mp4"
+      autoplay loop playsinline muted></video>
+   <div class="login-form">
+      <form action="/auth/login" method="POST">
+         <label> Username
+            <input type="text" name="username" placeholder="Username" required>
+         </label>
+         <label> Password
+            <input type="password" name="password" placeholder="Password" min="8">
+         </label>
 
-   <button class="submit-button" type="submit">Submit</button>
-</form>
+         <button class="login-submit-btn" type="submit">Log in</button>
+      </form>
+   </div>
+</div>
