@@ -10,7 +10,8 @@ const movies = [
     director: "Anthony Russo, Joe Russo",
     stars: ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo"],
     dateOfRelease: 2019,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818892/ironflix/IMG_5324_mo1wfa.jpg",
     description:
       "The universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
     didYouKnow:
@@ -24,7 +25,8 @@ const movies = [
     director: "Francis Ford Coppola",
     stars: ["Marlon Brando", "Al Pacino", "James Caan"],
     dateOfRelease: 1972,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818983/ironflix/IMG_5393_ueuo9u.jpg",
     description:
       "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.",
     didYouKnow:
@@ -38,7 +40,8 @@ const movies = [
     director: "Peter Jackson",
     stars: ["Elijah Wood", "Ian McKellen", "Orlando Bloom"],
     dateOfRelease: 2001,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818932/ironflix/IMG_5343_bitgrh.jpg",
     description:
       "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
     didYouKnow:
@@ -52,7 +55,8 @@ const movies = [
     director: "Todd Phillips",
     stars: ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz "],
     dateOfRelease: 2019,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818878/ironflix/IMG_5314_xg8tp6.jpg",
     description:
       "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
     didYouKnow:
@@ -66,7 +70,8 @@ const movies = [
     director: "Andy Muschietti",
     stars: ["Jaeden Martell", "Bill Skarsgård", "Finn Wolfhard"],
     dateOfRelease: 2017,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818878/ironflix/IMG_5313_uxxb3u.jpg",
     description:
       "The story of seven children in Derry, Maine, who are terrorized by the eponymous being, only to face their own personal demons in the process.",
     didYouKnow:
@@ -80,7 +85,8 @@ const movies = [
     director: "Tim Burton, Mike Johnson",
     stars: ["Johnny Depp", "Helena Bonham Carter", "Emily Watson"],
     dateOfRelease: 2005,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818880/ironflix/IMG_5316_xt78pj.jpg",
     description:
       "When a shy groom practices his wedding vows in the inadvertent presence of a deceased young woman, she rises from the grave assuming he has married her.",
     didYouKnow: "This is the only Warner Bros.' stop-motion animated film.",
@@ -93,7 +99,8 @@ const movies = [
     director: "Sam Mendes",
     stars: ["Dean-Charles Chapman", "George MacKay", "Daniel Mays"],
     dateOfRelease: 2019,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818883/ironflix/IMG_5320_cwsgap.jpg",
     description:
       "April 6th, 1917. As a regiment assembles to wage war deep in enemy territory, two soldiers are assigned to race against time and deliver a message that will stop 1,600 men from walking straight into a deadly trap.",
     didYouKnow:
@@ -103,15 +110,16 @@ const movies = [
   },
 
   {
-    title: "The Queen's Gambit",
-    director: "Scott Frank , Allan Scott",
-    stars: ["Anya Taylor-Joy", "Chloe Pirrie ", "Bill Camp"],
-    dateOfRelease: 2020,
-    coverPic: "",
+    title: "The Shining",
+    director: " Stanley Kubrick",
+    stars: ["Jack Nicholson", "Shelley Duvall", "Danny Lloyd"],
+    dateOfRelease: 1980,
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617908345/ironflix/IMG_5338_gs5qkl.jpg",
     description:
-      "Orphaned at the tender age of nine, prodigious introvert Beth Harmon discovers and masters the game of chess in the 1960s USA. But child stardom comes at a price.",
+      "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.",
     didYouKnow:
-      "According to The Chess Website, the Queen's Gambit is one of the most popular openings in chess because of its attacking prowess. Used when a player enjoys putting constant pressure on his or her opponent.",
+      "To get Jack Nicholson in the right agitated mood, he was fed only cheese sandwiches for two weeks, which he hates.",
     // reviews: "",
     // ratings: [Number],
   },
@@ -121,7 +129,8 @@ const movies = [
     director: " Lee Unkrich, Adrian Molina ",
     stars: ["Anthony Gonzalez", "Gael García Bernal", "Benjamin Bratt"],
     dateOfRelease: 2017,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818898/ironflix/IMG_5332_o8hslh.jpg",
     description:
       "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
     didYouKnow:
@@ -135,7 +144,8 @@ const movies = [
     director: "Jon Favreau",
     stars: ["Donald Glover", "Beyoncé", "Seth Rogen"],
     dateOfRelease: 2019,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818905/ironflix/IMG_5333_pnejwj.jpg",
     description:
       "After the murder of his father, a young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.",
     didYouKnow:
@@ -149,7 +159,8 @@ const movies = [
     director: "Irvin Kershner",
     stars: ["Mark Hamill", "Harrison Ford", "Carrie Fisher"],
     dateOfRelease: 1980,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818923/ironflix/IMG_5342_zjwqok.jpg",
     description:
       "After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader and a bounty hunter named Boba Fett all over the galaxy.",
     didYouKnow:
@@ -163,7 +174,8 @@ const movies = [
     director: "Robert Zemeckis",
     stars: ["Tom Hanks", "Helen Hunt", "Paul Sanchez"],
     dateOfRelease: 2000,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818944/ironflix/IMG_5345_rko2hp.jpg",
     description:
       "A FedEx executive undergoes a physical and emotional transformation after crash landing on a deserted island.",
     didYouKnow:
@@ -177,7 +189,8 @@ const movies = [
     director: "The Wachowski Brothers",
     stars: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
     dateOfRelease: 1999,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818956/ironflix/IMG_5346_bikgm2.jpg",
     description:
       "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
     didYouKnow:
@@ -191,7 +204,8 @@ const movies = [
     director: "Ridley Scott",
     stars: ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen "],
     dateOfRelease: 2000,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818969/ironflix/IMG_5348_reizka.jpg",
     description:
       "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
     didYouKnow:
@@ -205,7 +219,8 @@ const movies = [
     director: "Gore Verbinski",
     stars: ["Johnny Depp", "Orlando Bloom", "Keira Knightley"],
     dateOfRelease: 2006,
-    coverPic: "",
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818913/ironflix/IMG_5341_zu5uvu.jpg",
     description:
       "Jack Sparrow races to recover the heart of Davy Jones to avoid enslaving his soul to Jones' service, as other friends and foes seek the heart for their own agenda as well.",
     didYouKnow:
