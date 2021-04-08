@@ -19,7 +19,7 @@ const movieSchema = new Schema({
 
   coverPic: {
     type: String,
-    required: true,
+    //required: true,
     default: "",
   },
 
@@ -45,6 +45,7 @@ const movieSchema = new Schema({
 
   reviews: {
     type: String,
+    default: "There are no reviews yet for this movie",
   },
 
   ratings: [

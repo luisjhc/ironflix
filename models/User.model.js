@@ -35,7 +35,7 @@ const userSchema = new Schema({
   prefersDarkMode: {
     type: Boolean,
     default: false,
-  },
+  }
 });
 
 const User = model("User", userSchema);
