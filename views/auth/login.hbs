@@ -3,12 +3,11 @@
       autoplay loop playsinline muted></video>
    <div class="login-form">
       <form action="/auth/login" method="POST">
-         <label> Username
-            <input type="text" name="username" placeholder="Username" required>
-         </label>
-         <label> Password
-            <input type="password" name="password" placeholder="Password" min="8">
-         </label>
+         <label class="label"> Username</label>
+         <input type="text" name="username" placeholder="Username" required>
+
+         <label class="label"> Password</label>
+         <input type="password" name="password" placeholder="Password" min="8">
 
          <button class="login-submit-btn" type="submit">Log in</button>
       </form>

@@ -169,6 +169,17 @@ input[type="email"] {
   width: 400px;
 }
 
+.label {
+  /* display: block; */
+  text-align: center;
+  width: 105px;
+  padding: 5px;
+  background-color: rgba(254, 249, 239, 0.7);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 4px rgba(23, 195, 178, 0.5);
+}
+
 .login-submit-btn {
   font-size: 20px;
   color: #fef9efff;
