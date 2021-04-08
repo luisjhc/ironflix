@@ -19,7 +19,7 @@ const movieSchema = new Schema({
 
   coverPic: {
     type: String,
-    //required: true,
+    required: true,
     default: "",
   },
 

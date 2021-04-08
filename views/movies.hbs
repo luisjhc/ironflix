@@ -8,4 +8,15 @@
   <a href="/profile">My Profile</a>
 </div>
 
+<div class="allMovies">
+  {{#each allMovies}}
+  <div class="container-movies">
+    <img src="{{this.coverPic}}" alt="movieCover">
+    <h3>{{this.title}}</h3>
+    <a href="/movies/{{this.id}}">View More</a>
+  </div>
+  {{/each}}
+
+</div>
+
 {{/if}}
