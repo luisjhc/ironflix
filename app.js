@@ -44,6 +44,10 @@ app.use("/auth", authRoutes);
 const profileRoutes = require("./routes/profile");
 app.use("/profile", profileRoutes);
 
+// Edit Profile Pic Route
+const editProfilePicRoutes = require("./routes/editProfilePic");
+app.use("/editProfilePic", editProfilePicRoutes);
+
 // All Movies Route
 const moviesRoutes = require("./routes/movies");
 app.use("/movies", moviesRoutes);

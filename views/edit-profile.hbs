@@ -1,28 +1,31 @@
 <h3>Welcome to your edit page</h3>
 
 {{#with user}}
+{{!-- <form method="POST" action="/profile/edit" enctype="multipart/form-data"> --}}
+  <form method="POST" action="/profile/edit">
+    <label>Username:</label>
+    <input type="text" name="username" value="{{username}}">
+    <br>
+    <label>Bio:</label>
+    <input type="text" name="bio" value="{{bio}}">
+    <br>
+    <label>Email:</label>
+    <input type="email" name="email" value={{email}}>
+    <br>
+    {{!-- <p>Change your profile pic:</p>
+    <input type="file" name="profilePic" value={{profilePic}}>
+    <br> --}}
+    <br>
+    <button type="submit">Edit your profile</button>
+  </form>
+  <br>
 
-<form method="POST" action="/profile/edit" enctype="multipart/form-data">
-  <label>Username:</label>
-  <input type="text" name="username" value="{{username}}">
-  <br>
-  <label>Bio:</label>
-  <input type="text" name="bio" value="{{bio}}">
-  <br>
-  <label>Email:</label>
-  <input type="email" name="email" value={{email}}>
-  <br>
-  <p>Change your profile pic:</p>
-  <input type="file" name="profilePic" value={{profilePic}}>
-  <br>
-  <br>
-  <button type="submit">Edit your profile</button>
-</form>
-<br>
+  <a href="/profile">Go back to your profile</a>
+  <a href="/editProfilePic">Change your profile pic</a>
+  <a href="/movies">Go to movies</a>
 
-<a href="/profile">Go back to your profile</a>
-{{/with}}
+  {{/with}}
 
-{{#if errorMessage}}
-<h1 style="color: red;">{{errorMessage}}</h1>
-{{/if}}
+  {{#if errorMessage}}
+  <h1 style="color: red;">{{errorMessage}}</h1>
+  {{/if}}

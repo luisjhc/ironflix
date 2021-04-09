@@ -5,18 +5,15 @@
 
    <div class="signup-form">
       <form action="/auth/signup" method="POST">
-         <label> Username:<br>
-            <input type="text" name="username" placeholder="Username" required>
-         </label>
-         <br>
-         <label> Password:<br>
-            <input type="password" name="password" placeholder="Password" min="8">
-         </label>
-         <br>
-         <label> Email:<br>
-            <input type="email" name="email" placeholder="Email" required>
-         </label>
-         <br>
+         <label> Username:</label>
+         <input type="text" name="username" placeholder="Username" required>
+
+         <label> Password:</label>
+         <input type="password" name="password" placeholder="Password" min="8">
+
+         <label> Email:</label>
+         <input type="email" name="email" placeholder="Email" required>
+
          <button class="signup-submit-btn" type="submit">Sign up</button>
          {{!-- <a href="/auth/signup">Sign Up</a> --}}
       </form>

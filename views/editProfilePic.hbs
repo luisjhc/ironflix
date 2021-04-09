@@ -1,0 +1,19 @@
+{{#with user}}
+
+<img src="{{profilePic}}">
+<h3>Welcome {{username}}</h3>
+
+<form method="POST" action="/editProfilePic" enctype="multipart/form-data">
+
+  <p>Change your profile pic:</p>
+  <input type="file" name="profilePic" value={{profilePic}}>
+  <br>
+
+  <button type="submit">Change your profile pic</button>
+
+</form>
+
+<a href="/profile">Go back to your profile</a>
+<a href="/movies">Go to movies</a>
+
+{{/with}}

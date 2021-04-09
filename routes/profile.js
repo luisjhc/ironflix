@@ -14,45 +14,17 @@ router.get("/edit", isLoggedIn, (req, res) => {
   res.render("edit-profile", {user: req.session.user});
 });
 
-router.post("/edit", fileUploader.single('profilePic'), isLoggedIn, (req, res) => {
+router.post("/edit", isLoggedIn, (req, res) => {
   const {username, bio, email} = req.body;
-  const body = {username, shortBio: bio, email, profilePic: req.file.path}
+  const body = {username, shortBio: bio, email}
   for (let key in body) {
     if(body[key] === null || body[key] === undefined || body[key] === "") {
       delete body[key];
     }
   }
- // you need to turn req.body into a new object, that doesnt hold empty values.
- /* 
- {
-   username:"",
-   bio:"important stuff",
-   email:"y@y.com"
- },
- {
-  bio:"important stuff",
-   email:"y@y.com"
- }
-
- ¨
- {
-   username: "¨snoopy",
-   email:"ëmail@email.com",
-   bio:""
- }
-
- {
-    username: "¨snoopy",
-   email:"ëmail@email.com",
- }
-
- body.profilePic = req.file.path
- */ 
-
   User.findByIdAndUpdate(
     req.session.user._id, 
     body,
-    //{username, shortBio: bio, email, profilePic: req.file.path},
     {new: true}
   ).then((newUser) => {
     req.session.user = newUser;
@@ -72,6 +44,10 @@ router.get("/dark-mode", isLoggedIn, (req, res) => {
     req.session.user = updatedUser;
     res.redirect("/profile");
   });
+});
+
+router.get("/movies", isLoggedIn, (req, res) => {
+  res.render("movies", {user: req.session.user});
 });
 
 module.exports = router;
