@@ -149,7 +149,7 @@ router.get("/logout", isLoggedIn, (req, res) => {
       return res.status(500).render("auth/login", { errorMessage: err.message });
     }
     res.clearCookie("connect.sid");
-    res.redirect("/movies");
+    res.redirect("/");
   });
 });
 
