@@ -1,19 +1,34 @@
 {{#with user}}
-<img src="{{profilePic}}">
-<h3>Welcome {{username}}</h3>
 
-<a href="/profile/edit">Edit your profile</a>
-<a href="/">Go to movies</a>
+<div class="background-image">
 
-{{#if shortBio}}
+  <div class="profile-container">
 
-<p>
-  {{shortBio}}
-</p>
-{{/if}}
-{{#if prefersDarkMode}}
-<a href="/profile/dark-mode">Set light mode</a>
-{{else}}
-<a href="/profile/dark-mode">Set dark mode</a>
-{{/if}}
+    <img class="profileImage" src="{{profilePic}}">
+    <h3>Welcome {{username}}</h3>
+
+    {{#if shortBio}}
+
+    <p>
+      {{shortBio}}
+    </p>
+
+    <div class="profile-buttons">
+
+      <a href="/profile/edit">Edit your profile</a>
+      <a href="/">Go to movies</a>
+
+      {{/if}}
+      {{#if prefersDarkMode}}
+      <a href="/profile/dark-mode">Set light mode</a>
+      {{else}}
+      <a href="/profile/dark-mode">Set dark mode</a>
+      {{/if}}
+
+    </div>
+
+  </div>
+
+</div>
+
 {{/with}}

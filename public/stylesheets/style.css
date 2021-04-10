@@ -7,7 +7,7 @@
 --light-coral: #fe6d73ff;*/
 
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   background-color: rgb(254, 249, 239);
@@ -49,18 +49,6 @@ video {
   margin-top: -50px;
 }
 
-/* .description-landingPage > a {
-  text-decoration: none;
-  color: #fef9efff;
-  background-color: rgb(254, 109, 115);
-  font-size: 25px;
-  font-weight: bold;
-  border-style: solid;
-  border-radius: 30px;
-  padding: 20px;
-  margin: 20px;
-} */
-
 .signup-login-buttons{
   margin-top: 100px;
 }
@@ -84,19 +72,6 @@ video {
   color: #fe6d73ff;
   box-shadow: 0 0 15px 4px #ffcb77ff;
 }
-
-/* .signup-login-buttons {
-  margin-top: -350px;
-  z-index: 1;
-} */
-
-/* .background-img {
-  height: 450px;
-  width: 400px;
-  padding-bottom: 20px;
-  border-radius: 30px;
-  opacity: 0.8;
-} */
 
 /* Signup page  */
 
@@ -139,7 +114,6 @@ input[type="password"],
 input[type="email"] {
   padding: 10px;
   margin: 10px 10px;
-  /* background-color: rgb(23, 195, 178); */
   border: none;
   border-radius: 20px;
   box-shadow: 0 0 15px 4px rgba(23, 195, 178, 0.5);
@@ -235,4 +209,219 @@ input[type="email"] {
   background-color: #ffcb77ff;
   color: #fe6d73ff;
   box-shadow: 0 0 15px 4px #ffcb77ff;
+}
+
+/* Profile page */
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.profileImage {
+  margin-top: 100px;
+  width: 150px;
+}
+
+.profile-buttons {
+  margin-top: 50px;
+}
+
+.profile-buttons a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #fef9efff;
+  background-color: rgb(254, 109, 115);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  margin: 30px;
+  box-shadow: 0 0 15px 4px rgba(254, 109, 115, 0.7);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.profile-buttons a:hover{
+  background-color: #ffcb77ff;
+  color: #fe6d73ff;
+  box-shadow: 0 0 15px 4px #ffcb77ff;
+}
+
+/* Profile/edit page */
+
+.profile-edit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.profile-container h3 {
+  margin-top: 20px;;
+}
+
+.profile-edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #227C9D;
+  margin-top: 50px;
+  width: 400px;
+}
+
+.profile-edit-form label {
+  display: block;
+  text-align: center;
+  width: 105px;
+  padding: 5px;
+  background-color: rgba(254, 249, 239, 0.7);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 4px rgba(23, 195, 178, 0.5);
+  margin: auto;
+}
+
+.profile-edit-form button {
+  font-size: 20px;
+  color: #fef9efff;
+  background-color: rgb(254, 109, 115);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 0 15px 4px rgba(254, 109, 115, 0.7);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.profile-edit-form button:hover {
+  background-color: #ffcb77ff;
+  color: #fe6d73ff;
+  box-shadow: 0 0 15px 4px #ffcb77ff;
+}
+
+.profile-edit-buttons{
+  margin-top: 50px;
+}
+
+.profile-edit-buttons a{
+  text-decoration: none;
+  font-size: 15px;
+  color: #fe6d73ff;
+  background-color: rgb(255, 203, 119);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  margin: 30px;
+  box-shadow: 0 0 15px 4px rgba(255, 203, 119, 0.7);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.profile-edit-buttons a:hover{
+  background-color: #fe6d73ff;
+  color: #ffcb77ff;
+  box-shadow: 0 0 15px 4px #fe6d73ff;
+}
+
+/* Edit profile pic page */
+
+.background-image {
+  background-image: url("https://res.cloudinary.com/dertdncse/image/upload/v1618059442/ironflix/Backgrounds/background_3_l7icfg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.edit-profile-pic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.edit-profile-pic-container img {
+  margin-top: 50px;
+}
+
+.edit-profile-pic-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #227C9D;
+  margin-top: 50px;
+  width: 400px;
+}
+
+/* .edit-profile-pic-form > form:nth-child(4) {
+  font-size: 20px;
+  color: #fef9efff;
+  background-color: rgb(254, 109, 115);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 0 15px 4px rgba(254, 109, 115, 0.7);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}*/
+
+/* input[type="file" i] */
+
+/*input[type="file"] {
+  font-size: 20px;
+  color: #fef9efff;
+  background-color: rgb(254, 109, 115);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 0 15px 4px rgba(254, 109, 115, 0.7);
+  cursor: pointer;
+  transition-duration: 0.4s;
+} */
+
+.edit-profile-pic-form button:hover {
+  background-color: #ffcb77ff;
+  color: #fe6d73ff;
+  box-shadow: 0 0 15px 4px #ffcb77ff;
+}
+
+.profile-edit-pic-buttons{
+  margin-top: 50px;
+}
+
+.profile-edit-pic-buttons a{
+  text-decoration: none;
+  font-size: 15px;
+  color: #fe6d73ff;
+  background-color: rgb(255, 203, 119);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  margin: 30px;
+  box-shadow: 0 0 15px 4px rgba(255, 203, 119, 0.7);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.profile-edit-pic-buttons a:hover{
+  background-color: #fe6d73ff;
+  color: #ffcb77ff;
+  box-shadow: 0 0 15px 4px #fe6d73ff;
 }
