@@ -15,7 +15,9 @@ const movieSchema = new Schema({
     type: [String],
   },
 
-  dateOfRelease: Date,
+  dateOfRelease: {
+    type: String,
+  },
 
   coverPic: {
     type: String,
@@ -38,10 +40,10 @@ const movieSchema = new Schema({
   //   default: "https://zoom.us/",
   // },
 
-  // trailerLink: {
-  //   type: String,
-  //   default: "",
-  // },
+  trailerLink: {
+    type: String,
+    default: "",
+  },
 
   reviews: {
     type: String,

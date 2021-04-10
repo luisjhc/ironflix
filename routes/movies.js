@@ -18,4 +18,14 @@ router.get("/", isLoggedIn, (req, res, next) => {
   }
 });
 
+// Single Movie Page
+router.get("/:movieId", (req, res) => {
+  if (!req.session.user) {
+    res.redirect("/");
+  }
+  Movie.findOne({ _id: req.params.movieId }).then((singleMovie) => {
+    res.render("single-movie", { singleMovie });
+  });
+});
+
 module.exports = router;

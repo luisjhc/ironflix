@@ -12,6 +12,7 @@ const movies = [
     dateOfRelease: 2019,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818892/ironflix/IMG_5324_mo1wfa.jpg",
+    trailerLink: "https://www.youtube.com/embed/TcMBFSGVi1c",
     description:
       "The universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
     didYouKnow:
@@ -27,6 +28,7 @@ const movies = [
     dateOfRelease: 1972,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818983/ironflix/IMG_5393_ueuo9u.jpg",
+    trailerLink: "https://www.youtube.com/embed/sY1S34973zA",
     description:
       "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.",
     didYouKnow:
@@ -36,12 +38,13 @@ const movies = [
   },
 
   {
-    title: "The Lord of the Rings: The Keepers of the Ring ",
+    title: "The Lord of the Rings: The Fellowship of the Ring ",
     director: "Peter Jackson",
     stars: ["Elijah Wood", "Ian McKellen", "Orlando Bloom"],
     dateOfRelease: 2001,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818932/ironflix/IMG_5343_bitgrh.jpg",
+    trailerLink: "https://www.youtube.com/embed/aStYWD25fAQ",
     description:
       "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
     didYouKnow:
@@ -57,6 +60,7 @@ const movies = [
     dateOfRelease: 2019,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818878/ironflix/IMG_5314_xg8tp6.jpg",
+    trailerLink: "https://www.youtube.com/embed/zAGVQLHvwOY",
     description:
       "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
     didYouKnow:
@@ -72,6 +76,7 @@ const movies = [
     dateOfRelease: 2017,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818878/ironflix/IMG_5313_uxxb3u.jpg",
+    trailerLink: "https://www.youtube.com/embed/FnCdOQsX5kc",
     description:
       "The story of seven children in Derry, Maine, who are terrorized by the eponymous being, only to face their own personal demons in the process.",
     didYouKnow:
@@ -87,6 +92,7 @@ const movies = [
     dateOfRelease: 2005,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818880/ironflix/IMG_5316_xt78pj.jpg",
+    trailerLink: "https://www.youtube.com/embed/AGACeWVdFqo",
     description:
       "When a shy groom practices his wedding vows in the inadvertent presence of a deceased young woman, she rises from the grave assuming he has married her.",
     didYouKnow: "This is the only Warner Bros.' stop-motion animated film.",
@@ -101,6 +107,7 @@ const movies = [
     dateOfRelease: 2019,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818883/ironflix/IMG_5320_cwsgap.jpg",
+    trailerLink: "https://www.youtube.com/embed/YqNYrYUiMfg",
     description:
       "April 6th, 1917. As a regiment assembles to wage war deep in enemy territory, two soldiers are assigned to race against time and deliver a message that will stop 1,600 men from walking straight into a deadly trap.",
     didYouKnow:
@@ -116,6 +123,7 @@ const movies = [
     dateOfRelease: 1980,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617908345/ironflix/IMG_5338_gs5qkl.jpg",
+    trailerLink: "https://www.youtube.com/embed/S014oGZiSdI",
     description:
       "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.",
     didYouKnow:
@@ -131,6 +139,7 @@ const movies = [
     dateOfRelease: 2017,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818898/ironflix/IMG_5332_o8hslh.jpg",
+    trailerLink: "https://www.youtube.com/embed/5sSMRg1X1vg",
     description:
       "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
     didYouKnow:
@@ -146,6 +155,7 @@ const movies = [
     dateOfRelease: 2019,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818905/ironflix/IMG_5333_pnejwj.jpg",
+    trailerLink: "https://www.youtube.com/embed/7TavVZMewpY",
     description:
       "After the murder of his father, a young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.",
     didYouKnow:
@@ -161,6 +171,7 @@ const movies = [
     dateOfRelease: 1980,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818923/ironflix/IMG_5342_zjwqok.jpg",
+    trailerLink: "https://www.youtube.com/embed/JNwNXF9Y6kY",
     description:
       "After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader and a bounty hunter named Boba Fett all over the galaxy.",
     didYouKnow:
@@ -176,6 +187,7 @@ const movies = [
     dateOfRelease: 2000,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818944/ironflix/IMG_5345_rko2hp.jpg",
+    trailerLink: "https://www.youtube.com/embed/4tVklCz2jcI",
     description:
       "A FedEx executive undergoes a physical and emotional transformation after crash landing on a deserted island.",
     didYouKnow:
@@ -191,6 +203,7 @@ const movies = [
     dateOfRelease: 1999,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818956/ironflix/IMG_5346_bikgm2.jpg",
+    trailerLink: "https://www.youtube.com/embed/vKQi3bBA1y8",
     description:
       "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
     didYouKnow:
@@ -206,6 +219,7 @@ const movies = [
     dateOfRelease: 2000,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818969/ironflix/IMG_5348_reizka.jpg",
+    trailerLink: "https://www.youtube.com/embed/AxQajgTyLcM",
     description:
       "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
     didYouKnow:
@@ -221,6 +235,7 @@ const movies = [
     dateOfRelease: 2006,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818913/ironflix/IMG_5341_zu5uvu.jpg",
+    trailerLink: "https://www.youtube.com/embed/6-NGPgX-uYA",
     description:
       "Jack Sparrow races to recover the heart of Davy Jones to avoid enslaving his soul to Jones' service, as other friends and foes seek the heart for their own agenda as well.",
     didYouKnow:
