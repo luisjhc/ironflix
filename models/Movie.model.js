@@ -40,10 +40,10 @@ const movieSchema = new Schema({
   //   default: "https://zoom.us/",
   // },
 
-  // trailerLink: {
-  //   type: String,
-  //   default: "",
-  // },
+  trailerLink: {
+    type: String,
+    default: "",
+  },
 
   reviews: {
     type: String,
