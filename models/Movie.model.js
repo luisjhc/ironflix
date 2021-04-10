@@ -15,7 +15,9 @@ const movieSchema = new Schema({
     type: [String],
   },
 
-  dateOfRelease: Date,
+  dateOfRelease: {
+    type: String,
+  },
 
   coverPic: {
     type: String,
