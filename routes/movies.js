@@ -42,9 +42,8 @@ router.get("/:movieId", isLoggedIn, (req, res) => {
 //       { new: true }
 //     ).then((updatedUser) => {
 //       console.log("updatedUser:", updatedUser);
-//       return res.redirect("/:movieId");
+//       return res.redirect(`/movies/${singleMovie._id}`);
 //     });
-//     res.render("single-movie", { singleMovie });
 //   });
 // })
 
