@@ -37,6 +37,8 @@ const userSchema = new Schema({
     default: false,
   },
 
+  favouriteList: [{ type: Schema.Types.ObjectId, ref: "Movie" }],
+  
 //   favouriteList: [
 //     {
 //     type: Object,
