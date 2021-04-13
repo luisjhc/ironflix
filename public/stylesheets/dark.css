@@ -6,3 +6,7 @@ body {
 * {
   color: lightgray;
 }
+
+.background-image {
+  background-image: url("/images/background12.jpeg");
+}

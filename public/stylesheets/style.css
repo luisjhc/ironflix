@@ -6,8 +6,8 @@
 --floral-white: #fef9efff;
 --light-coral: #fe6d73ff;*/
 
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: rgb(254, 249, 239);
@@ -17,7 +17,7 @@ html, body {
 /* Landing/Starting Page  */
 
 video {
-  object-fit:cover;
+  object-fit: cover;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -49,7 +49,7 @@ video {
   margin-top: -50px;
 }
 
-.signup-login-buttons{
+.signup-login-buttons {
   margin-top: 100px;
 }
 
@@ -91,7 +91,7 @@ video {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  color: #227C9D;
+  color: #227c9d;
   margin-top: 100px;
   width: 400px;
 }
@@ -174,7 +174,7 @@ input[type="email"] {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  color: #227C9D;
+  color: #227c9d;
   margin-top: 100px;
   width: 400px;
 }
@@ -223,13 +223,25 @@ input[type="email"] {
 .profileImage {
   margin-top: 100px;
   width: 150px;
+  border-radius: 80px;
+}
+
+.profile-heading {
+  color: #17c3b2ff;
+  background-color: rgba(254, 249, 239, 0.7);
+  box-shadow: 0 0 15px 4px rgba(23, 195, 178, 0.5);
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
 }
 
 .profile-buttons {
   margin-top: 50px;
 }
 
-.profile-buttons a{
+.profile-buttons a {
   text-decoration: none;
   font-size: 20px;
   color: #fef9efff;
@@ -244,7 +256,7 @@ input[type="email"] {
   transition-duration: 0.4s;
 }
 
-.profile-buttons a:hover{
+.profile-buttons a:hover {
   background-color: #ffcb77ff;
   color: #fe6d73ff;
   box-shadow: 0 0 15px 4px #ffcb77ff;
@@ -263,14 +275,14 @@ input[type="email"] {
 }
 
 .profile-container h3 {
-  margin-top: 20px;;
+  margin-top: 20px;
 }
 
 .profile-edit-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #227C9D;
+  color: #227c9d;
   margin-top: 50px;
   width: 400px;
 }
@@ -283,7 +295,7 @@ input[type="email"] {
   background-color: rgba(254, 249, 239, 0.7);
   border: none;
   border-radius: 20px;
-  box-shadow: 0 0 15px 4px rgba(23, 195, 178, 0.5);
+  box-shadow: 0 0 15px 4px rgba(23, 195, 178, 0.7);
   margin: auto;
 }
 
@@ -307,13 +319,14 @@ input[type="email"] {
   box-shadow: 0 0 15px 4px #ffcb77ff;
 }
 
-.profile-edit-buttons{
+.profile-edit-buttons {
   margin-top: 50px;
 }
 
-.profile-edit-buttons a{
+.profile-edit-buttons a {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: bold;
   color: #fe6d73ff;
   background-color: rgb(255, 203, 119);
   border-radius: 18px;
@@ -326,7 +339,7 @@ input[type="email"] {
   transition-duration: 0.4s;
 }
 
-.profile-edit-buttons a:hover{
+.profile-edit-buttons a:hover {
   background-color: #fe6d73ff;
   color: #ffcb77ff;
   box-shadow: 0 0 15px 4px #fe6d73ff;
@@ -335,7 +348,7 @@ input[type="email"] {
 /* Edit profile pic page */
 
 .background-image {
-  background-image: url("https://res.cloudinary.com/dertdncse/image/upload/v1618059442/ironflix/Backgrounds/background_3_l7icfg.jpg");
+  background-image: url("/images/background15.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -360,7 +373,7 @@ input[type="email"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #227C9D;
+  color: #227c9d;
   margin-top: 50px;
   width: 400px;
 }
@@ -400,11 +413,11 @@ input[type="email"] {
   box-shadow: 0 0 15px 4px #ffcb77ff;
 }
 
-.edit-profile-pic-buttons{
+.edit-profile-pic-buttons {
   margin-top: 50px;
 }
 
-.edit-profile-pic-buttons a{
+.edit-profile-pic-buttons a {
   text-decoration: none;
   font-size: 15px;
   color: #fe6d73ff;
@@ -419,7 +432,7 @@ input[type="email"] {
   transition-duration: 0.4s;
 }
 
-.edit-profile-pic-buttons a:hover{
+.edit-profile-pic-buttons a:hover {
   background-color: #fe6d73ff;
   color: #ffcb77ff;
   box-shadow: 0 0 15px 4px #fe6d73ff;
