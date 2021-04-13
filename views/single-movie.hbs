@@ -39,6 +39,12 @@
   <p>{{this.didYouKnow}}</p>
 
   <a href="/movies/{{this._id}}/addToMyList">Add to My List</a>
+
+
 </div>
 
 {{/with}}
+
+{{#if isInFavouriteList}}
+<p>This movie is in your list</p>
+{{/if}}
