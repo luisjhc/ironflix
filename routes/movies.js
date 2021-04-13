@@ -22,8 +22,19 @@ router.get("/", isLoggedIn, (req, res, next) => {
 // Single Movie Page
 router.get("/:movieId", isLoggedIn, (req, res) => {
   Movie.findOne({ _id: req.params.movieId }).then((singleMovie) => {
-    console.log(singleMovie._id);
-    res.render("single-movie", { singleMovie });
+    if (!singleMovie) {
+      return res.redirect("/movies");
+    }
+    console.log(req.session.user);
+
+    let isInFavouriteList;
+    if (req.session.user.favouriteList.includes(singleMovie._id.toString())) {
+      isInFavouriteList = true;
+    }
+
+    console.log("ÏS IN GFAVOROuier", isInFavouriteList);
+    // console.log(singleMovie._id);
+    res.render("single-movie", { singleMovie, isInFavouriteList });
   });
 });
 
@@ -32,6 +43,7 @@ router.get("/:movieId", isLoggedIn, (req, res) => {
 // Modified line 41 in single-movie.hbs (link add to my list)
 
 router.get("/:movieId/addToMyList", isLoggedIn, (req, res) => {
+  let isInFavouriteList;
   Movie.findOne({ _id: req.params.movieId }).then((singleMovie) => {
     User.findByIdAndUpdate(
       req.session.user._id,
@@ -41,10 +53,10 @@ router.get("/:movieId/addToMyList", isLoggedIn, (req, res) => {
       { new: true }
     ).then((updatedUser) => {
       console.log("updatedUser:", updatedUser);
+      req.session.user = updatedUser;
       return res.redirect(`/movies/${singleMovie._id}`);
     });
   });
 });
-
 
 module.exports = router;
