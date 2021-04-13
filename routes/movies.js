@@ -44,6 +44,7 @@ router.get("/:movieId/addToMyList", isLoggedIn, (req, res) => {
       return res.redirect(`/movies/${singleMovie._id}`);
     });
   });
-})
+});
+
 
 module.exports = router;
