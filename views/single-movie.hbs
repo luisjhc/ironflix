@@ -38,13 +38,18 @@
   <h4>Did You Know?</h4>
   <p>{{this.didYouKnow}}</p>
 
-  <a href="/movies/{{this._id}}/addToMyList">Add to My List</a>
-
-
 </div>
 
 {{/with}}
 
 {{#if isInFavouriteList}}
+
 <p>This movie is in your list</p>
+
+<a href="/movies/{{this.singleMovie._id}}/deleteFromList">Remove this movie from your list</a>
+
+{{else}}
+
+<a href="/movies/{{this.singleMovie._id}}/addToMyList">Add to My List</a>
+
 {{/if}}
