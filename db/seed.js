@@ -149,6 +149,22 @@ const movies = [
   },
 
   {
+    title: "Up",
+    director: "Pete Docter, Bob Peterson ",
+    stars: ["Edward Asner", "Jordan Nagai", "John Ratzenberger"],
+    dateOfRelease: 2009,
+    coverPic:
+      "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1618491720/ironflix/IMG_5456_voqtym.jpg",
+    trailerLink: "https://www.youtube.com/embed/qas5lWp7_R0",
+    description:
+      "78-year-old Carl Fredricksen travels to Paradise Falls in his house equipped with balloons, inadvertently taking a young stowaway.",
+    didYouKnow:
+      "When Ellie is playing in the abandoned house, she is going to Paradise Falls she sees a puppy though her soda binoculars, then says that they're going through a story with lightning and hail. Carl pilots the same house using the same window to Paradise Falls; along the way they fly though a storm, and the first living thing they encounter is indeed a puppy.",
+    // reviews: "",
+    // ratings: [Number],
+  },
+
+  {
     title: "The Lion King",
     director: "Jon Favreau",
     stars: ["Donald Glover", "Beyoncé", "Seth Rogen"],
