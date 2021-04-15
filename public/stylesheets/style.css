@@ -437,3 +437,87 @@ input[type="email"] {
   color: #ffcb77ff;
   box-shadow: 0 0 15px 4px #fe6d73ff;
 }
+
+/* All Movies Page */
+
+.moviesPage-background-img {
+  background-image: url("/images/background15.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.moviesPage-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.allMovies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Separate movie section on All Movies Page */
+
+.container-movies {
+  padding: 20px;
+  text-align: center;
+}
+
+.movieCover-img {
+  width: 400px;
+  height: 600px;
+}
+
+.logout-profile-createMovie-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.logout-profile-createMovie-buttons a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fe6d73ff;
+  background-color: rgb(255, 203, 119);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0 0 15px 4px rgba(255, 203, 119, 0.7);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.logout-profile-createMovie-buttons a:hover {
+  background-color: #fe6d73ff;
+  color: #ffcb77ff;
+  box-shadow: 0 0 15px 4px #fe6d73ff;
+}
+
+.view-more-btn {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fe6d73ff;
+  background-color: rgb(255, 203, 119);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 0 15px 4px rgba(255, 203, 119, 0.7);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}

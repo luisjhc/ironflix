@@ -7,6 +7,18 @@ body {
   color: lightgray;
 }
 
+/* My Profile/ Edit Profile Pages */
+
 .background-image {
   background-image: url("/images/background12.jpeg");
+}
+
+/* All Movies Page */
+
+.moviesPage-background-img {
+  background-image: url("/images/smokebackground.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }

@@ -1,23 +1,27 @@
-<h1>all movies page</h1>
-
 {{#if user}}
-<h3>Welcome {{user.username}}</h3>
+<div class="moviesPage-background-img">
+  <div class="moviesPage-container">
+    <h2 class="profile-heading">Welcome {{user.username}}</h2>
+    <h3>Explore and enjoy our library of the finest movies of all times.</h3>
 
-<div class="logout-profile-buttons">
-  <a href="/auth/logout">Log Out</a>
-  <a href="/profile">My Profile</a>
-  <a href="/CreateMovie">&#10133;Add Movie to Collection</a>
-</div>
+    <div class="logout-profile-createMovie-buttons">
+      <a href="/auth/logout">Log Out</a>
+      <a href="/profile">My Profile</a>
+      <a href="/CreateMovie">&#10133;Add Movie to Collection</a>
+    </div>
 
-<div class="allMovies">
-  {{#each allMovies}}
-  <div class="container-movies">
-    <img src="{{this.coverPic}}" alt="movieCover">
-    <h3>{{this.title}}</h3>
-    <a href="/movies/{{this.id}}">View More</a>
+    <div class="allMovies">
+      {{#each allMovies}}
+      <div class="container-movies">
+        <img class="movieCover-img" src="{{this.coverPic}}" alt="movieCover">
+        <h3>{{this.title}}</h3>
+        <a class="view-more-btn" href="/movies/{{this.id}}">View More</a>
+      </div>
+      {{/each}}
+
+    </div>
   </div>
-  {{/each}}
-
 </div>
+
 
 {{/if}}
