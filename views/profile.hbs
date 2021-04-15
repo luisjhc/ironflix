@@ -15,6 +15,13 @@
 
     {{/if}}
 
+    <h3>My list:</h3>
+    {{#each favouriteList}}
+    <li>
+      <a href="/movies/{{this._id}}">{{this.title}}</a>
+    </li>
+    {{/each}}
+
     <div class="profile-buttons">
 
       <a href="/profile/edit">Edit your profile</a>

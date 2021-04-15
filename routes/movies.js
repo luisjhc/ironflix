@@ -47,7 +47,7 @@ router.get("/:movieId/addToMyList", isLoggedIn, (req, res) => {
       },
       { new: true }
     ).then((updatedUser) => {
-      console.log("updatedUser:", updatedUser);
+      // console.log("updatedUser:", updatedUser);
       req.session.user = updatedUser;
       return res.redirect(`/movies/${singleMovie._id}`);
     });
@@ -65,7 +65,7 @@ router.get("/:movieId/deleteFromList", isLoggedIn, (req, res) => {
       },
       { new: true }
     ).then((updatedUser) => {
-      console.log("updatedUser:", updatedUser);
+      // console.log("updatedUser:", updatedUser);
       req.session.user = updatedUser;
       return res.redirect(`/movies/${singleMovie._id}`);
     });

@@ -17,7 +17,7 @@ const userSchema = new Schema({
     required: true,
     unique: true,
   },
-  
+
   age: {
     type: Number,
     //required: true,
@@ -25,7 +25,8 @@ const userSchema = new Schema({
 
   profilePic: {
     type: String,
-    default: 'https://res.cloudinary.com/dertdncse/image/upload/v1617609719/User/defaultProfilePic_aytzpz.jpg',
+    default:
+      "https://res.cloudinary.com/dertdncse/image/upload/v1617609719/User/defaultProfilePic_aytzpz.jpg",
   },
 
   shortBio: {
@@ -38,12 +39,12 @@ const userSchema = new Schema({
   },
 
   favouriteList: [{ type: Schema.Types.ObjectId, ref: "Movie" }],
-  
-//   favouriteList: [
-//     {
-//     type: Object,
-//   }
-// ]
+
+  //   favouriteList: [
+  //     {
+  //     type: Object,
+  //   }
+  // ]
 });
 
 const User = model("User", userSchema);
