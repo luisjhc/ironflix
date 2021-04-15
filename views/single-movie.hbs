@@ -44,12 +44,12 @@
 
 {{#if isInFavouriteList}}
 
-<p>This movie is in My List</p>
+<p>&#10004; This movie is in My List</p>
 
-<a href="/movies/{{this.singleMovie._id}}/deleteFromList">Remove this movie from My List</a>
+<a href="/movies/{{this.singleMovie._id}}/deleteFromList">&#10134; Remove this movie from My List</a>
 
 {{else}}
 
-<a href="/movies/{{this.singleMovie._id}}/addToMyList">Add to My List</a>
+<a href="/movies/{{this.singleMovie._id}}/addToMyList">&#10133; Add to My List</a>
 
 {{/if}}
