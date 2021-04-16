@@ -12,7 +12,7 @@ const movieSchema = new Schema({
   },
 
   stars: {
-    type: [String],
+    type: String,
   },
 
   dateOfRelease: {
@@ -56,6 +56,12 @@ const movieSchema = new Schema({
       default: 3,
     },
   ],
+
+  owner: {
+    type: Schema.Types.ObjectId,
+    ref: "User",
+    default: "606f5f3cd08d213192b06ec0",
+  },
 });
 
 const Movie = model("Movie", movieSchema);

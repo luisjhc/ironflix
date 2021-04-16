@@ -10,11 +10,8 @@ router.get("/", isLoggedIn, (req, res) => {
   User.findById(req.session.user._id)
     .populate("favouriteList")
     .then((userFound) => {
-      // const titles = user.favouriteList.map((item) => item.title);
-      // console.log(titles);
-      // const movieId = user.favouriteList.map((item) => item._id);
-      // console.log("MovieId:", movieId);
       res.render("profile", { user: userFound });
+      console.log(userFound);
     });
 });
 
