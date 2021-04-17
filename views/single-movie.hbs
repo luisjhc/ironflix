@@ -1,85 +1,94 @@
-<h1>Welcome {{user.username}}</h1>
+<div class="moviesPage-background-img">
+  <div class="SingleMovie-container">
 
-<div class="logout-profile-buttons">
-  <a href="/auth/logout">Log Out</a>
-  <a href="/profile">My Profile</a>
-  <a href="/movies">All Movies</a>
+    <h2 class="profile-heading">Welcome {{user.username}}</h2>
+
+    <div class="logout-profile-singleMovie-buttons">
+      <a href="/auth/logout">Log Out</a>
+      <a href="/profile">My Profile</a>
+      <a href="/movies">All Movies</a>
+    </div>
+
+    <div class="imageAndDescription-container">
+      {{#with singleMovie}}
+
+      <div class="single-movie-image">
+        <img src="{{this.coverPic}}" alt="coverPic">
+      </div>
+
+      <div class="single-movie-detailsAndTrailer">
+        <div class="single-movie-details">
+          <h2>{{this.title}}</h2>
+          <p>Release Date: {{this.dateOfRelease}}</p>
+          <h3>Director: {{this.director}}</h3>
+          <h4>Starring:</h4>
+          <h5>{{this.stars}}</h5>
+
+          <h4>Description:</h4>
+          <p>{{this.description}}</p>
+
+          <h4>Did You Know?</h4>
+          <p>{{this.didYouKnow}}</p>
+
+          <h4>Would you like to enjoy this movie with your friends?</h4>
+          <p>Just join the watch party together</p>
+          <a href="https://meet.jit.si/{this._id} ">&#x1F4FA;Join</a>
+        </div>
+
+        {{#if ../rating}}
+        <h4>This Movie is rated as {{../rating}} &#x2B50;stars</h4>
+        {{/if}}
+
+
+        <form method="POST" action="/movies/{{this._id}}/rating">
+          <label for="rating">How awesome was this Movie?</label>
+          <select name="rating" id="rating">
+            <option value="1">2&#x2B50;</option>
+            <option value="2">2&#x2B50;</option>
+            <option value="3">3&#x2B50;</option>
+            <option value="4">4&#x2B50;</option>
+            <option value="5">5&#x2B50;</option>
+          </select>
+
+          <button type="submit">Create Rating</button>
+        </form>
+
+
+
+        <h4>Would you like to enjoy this movie with your friends?</h4>
+        <p>Just join the watch party together</p>
+        <a href="https://meet.jit.si/{this._id} ">&#x1F4FA; Join</a>
+        <div class="movie-trailer">
+          {{!-- <iframe width="420" height="315" src="{{this.trailerLink}}controls=1">
+          </iframe> --}}
+          <iframe width="650" height="370" src="{{this.trailerLink}}" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+
+
+    {{/with}}
+
+    {{#if isInFavouriteList}}
+
+    <p>&#10004; This movie is in My List</p>
+
+    <a href="/movies/{{this.singleMovie._id}}/deleteFromList">&#10134; Remove this movie from My List</a>
+
+    {{else}}
+
+    <a href="/movies/{{this.singleMovie._id}}/addToMyList">&#10133; Add to My List</a>
+
+    {{/if}}
+
+    {{#if isOwner}}
+
+    <a href="/movies/{{this.singleMovie._id}}/deleteFromCollection">&#10134; Remove this movie from Collection</a>
+
+    {{/if}}
+
+  </div>
 </div>
-
-{{#with singleMovie}}
-
-<div class="movie-coverPic">
-  <img src="{{this.coverPic}}" alt="coverPic">
-</div>
-
-<div class="movie-trailer">
-  {{!-- <iframe width="420" height="315" src="{{this.trailerLink}}controls=1">
-  </iframe> --}}
-  <iframe width="560" height="315" src="{{this.trailerLink}}" title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
-</div>
-
-<div class="single-movie-details">
-  <h2>{{this.title}}</h2>
-  <p>Release Date: {{this.dateOfRelease}}</p>
-  <h3>Director: {{this.director}}</h3>
-  <h4>Starring:</h4>
-
-  <ul>
-    {{#each this.stars}}
-    <li>{{this}}</li>
-    {{/each}}
-  </ul>
-
-  <h4>Description:</h4>
-  <p>{{this.description}}</p>
-
-  <h4>Did You Know?</h4>
-  <p>{{this.didYouKnow}}</p>
-
-  {{#if ../rating}}
-  <h4>This Movie is rated as {{../rating}} &#x2B50;stars</h4>
-  {{/if}}
-
-
-  <form method="POST" action="/movies/{{this._id}}/rating">
-    <label for="rating">How awesome was this Movie?</label>
-    <select name="rating" id="rating">
-      <option value="1">2&#x2B50;</option>
-      <option value="2">2&#x2B50;</option>
-      <option value="3">3&#x2B50;</option>
-      <option value="4">4&#x2B50;</option>
-      <option value="5">5&#x2B50;</option>
-    </select>
-
-    <button type="submit">Create Rating</button>
-  </form>
-
-
-
-  <h4>Would you like to enjoy this movie with your friends?</h4>
-  <p>Just join the watch party together</p>
-  <a href="https://meet.jit.si/{this._id} ">&#x1F4FA; Join</a>
-
-</div>
-
-{{/with}}
-
-{{#if isInFavouriteList}}
-
-<p>&#10004; This movie is in My List</p>
-
-<a href="/movies/{{this.singleMovie._id}}/deleteFromList">&#10134; Remove this movie from My List</a>
-
-{{else}}
-
-<a href="/movies/{{this.singleMovie._id}}/addToMyList">&#10133; Add to My List</a>
-
-{{/if}}
-
-{{#if isOwner}}
-
-<a href="/movies/{{this.singleMovie._id}}/deleteFromCollection">&#10134; Remove this movie from Collection</a>
-
-{{/if}}

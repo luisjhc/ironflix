@@ -4,6 +4,7 @@ body {
 }
 
 * {
+  /* color: white; */
   color: lightgray;
 }
 
@@ -21,5 +22,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  /* height: 100vh; */
+}
+
+.profile-heading {
+  color: rgb(255, 203, 119);
+  background-color: rgba(254, 249, 239, 0.7);
+  box-shadow: 0 0 15px 4px rgba(23, 195, 178, 0.5);
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.single-movie-details {
+  color: #ffcb77ff;
 }
