@@ -25,6 +25,7 @@ router.get("/:movieId", isLoggedIn, (req, res) => {
   Movie.findOne({ _id: req.params.movieId })
     .populate("owner")
     .then((singleMovie) => {
+      console.log(singleMovie);
       if (!singleMovie) {
         return res.redirect("/movies");
       }
@@ -40,7 +41,7 @@ router.get("/:movieId", isLoggedIn, (req, res) => {
 
       let isOwner = false;
 
-      if (singleMovie.owner._id.toString() === req.session.user._id) {
+      if (singleMovie?.owner?._id?.toString() === req.session.user._id) {
         isOwner = true;
       }
 
