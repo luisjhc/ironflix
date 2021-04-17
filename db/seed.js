@@ -8,7 +8,7 @@ const movies = [
   {
     title: "Avengers: Endgame.",
     director: "Anthony Russo, Joe Russo",
-    stars: ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo"],
+    stars: "Robert Downey Jr., Chris Evans, Mark Ruffalo",
     dateOfRelease: 2019,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818892/ironflix/IMG_5324_mo1wfa.jpg",
@@ -24,7 +24,7 @@ const movies = [
   {
     title: "The Godfather",
     director: "Francis Ford Coppola",
-    stars: ["Marlon Brando", "Al Pacino", "James Caan"],
+    stars: "Marlon Brando, Al Pacino, James Caan",
     dateOfRelease: 1972,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818983/ironflix/IMG_5393_ueuo9u.jpg",
@@ -40,7 +40,7 @@ const movies = [
   {
     title: "The Lord of the Rings: The Fellowship of the Ring ",
     director: "Peter Jackson",
-    stars: ["Elijah Wood", "Ian McKellen", "Orlando Bloom"],
+    stars: "Elijah Wood, Ian McKellen, Orlando Bloom",
     dateOfRelease: 2001,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818932/ironflix/IMG_5343_bitgrh.jpg",
@@ -56,7 +56,7 @@ const movies = [
   {
     title: "Joker",
     director: "Todd Phillips",
-    stars: ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz "],
+    stars: "Joaquin Phoenix, Robert De Niro, Zazie Beetz ",
     dateOfRelease: 2019,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818878/ironflix/IMG_5314_xg8tp6.jpg",
@@ -72,7 +72,7 @@ const movies = [
   {
     title: "IT",
     director: "Andy Muschietti",
-    stars: ["Jaeden Martell", "Bill Skarsgård", "Finn Wolfhard"],
+    stars: "Jaeden Martell, Bill Skarsgård, Finn Wolfhard",
     dateOfRelease: 2017,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818878/ironflix/IMG_5313_uxxb3u.jpg",
@@ -88,7 +88,7 @@ const movies = [
   {
     title: "Corpse Bride ",
     director: "Tim Burton, Mike Johnson",
-    stars: ["Johnny Depp", "Helena Bonham Carter", "Emily Watson"],
+    stars: "Johnny Depp, Helena Bonham Carter, Emily Watson",
     dateOfRelease: 2005,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818880/ironflix/IMG_5316_xt78pj.jpg",
@@ -103,7 +103,7 @@ const movies = [
   {
     title: "1917",
     director: "Sam Mendes",
-    stars: ["Dean-Charles Chapman", "George MacKay", "Daniel Mays"],
+    stars: "Dean-Charles Chapman, George MacKay, Daniel Mays",
     dateOfRelease: 2019,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818883/ironflix/IMG_5320_cwsgap.jpg",
@@ -119,7 +119,7 @@ const movies = [
   {
     title: "The Shining",
     director: " Stanley Kubrick",
-    stars: ["Jack Nicholson", "Shelley Duvall", "Danny Lloyd"],
+    stars: "Jack Nicholson, Shelley Duvall, Danny Lloyd",
     dateOfRelease: 1980,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617908345/ironflix/IMG_5338_gs5qkl.jpg",
@@ -135,7 +135,7 @@ const movies = [
   {
     title: "Coco",
     director: " Lee Unkrich, Adrian Molina ",
-    stars: ["Anthony Gonzalez", "Gael García Bernal", "Benjamin Bratt"],
+    stars: "Anthony Gonzalez, Gael García Bernal, Benjamin Bratt",
     dateOfRelease: 2017,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818898/ironflix/IMG_5332_o8hslh.jpg",
@@ -151,7 +151,7 @@ const movies = [
   {
     title: "Up",
     director: "Pete Docter, Bob Peterson ",
-    stars: ["Edward Asner", "Jordan Nagai", "John Ratzenberger"],
+    stars: "Edward Asner, Jordan Nagai, John Ratzenberger",
     dateOfRelease: 2009,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1618491720/ironflix/IMG_5456_voqtym.jpg",
@@ -167,7 +167,7 @@ const movies = [
   {
     title: "The Lion King",
     director: "Jon Favreau",
-    stars: ["Donald Glover", "Beyoncé", "Seth Rogen"],
+    stars: "Donald Glover, Beyoncé, Seth Rogen",
     dateOfRelease: 2019,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818905/ironflix/IMG_5333_pnejwj.jpg",
@@ -183,7 +183,7 @@ const movies = [
   {
     title: "Star Wars: Episode V - The Empire Strikes Back",
     director: "Irvin Kershner",
-    stars: ["Mark Hamill", "Harrison Ford", "Carrie Fisher"],
+    stars: "Mark Hamill, Harrison Ford, Carrie Fisher",
     dateOfRelease: 1980,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818923/ironflix/IMG_5342_zjwqok.jpg",
@@ -199,7 +199,7 @@ const movies = [
   {
     title: "Cast Away",
     director: "Robert Zemeckis",
-    stars: ["Tom Hanks", "Helen Hunt", "Paul Sanchez"],
+    stars: "Tom Hanks, Helen Hunt, Paul Sanchez",
     dateOfRelease: 2000,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818944/ironflix/IMG_5345_rko2hp.jpg",
@@ -215,7 +215,7 @@ const movies = [
   {
     title: "The Matrix",
     director: "The Wachowski Brothers",
-    stars: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+    stars: "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
     dateOfRelease: 1999,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818956/ironflix/IMG_5346_bikgm2.jpg",
@@ -231,7 +231,7 @@ const movies = [
   {
     title: "Gladiator",
     director: "Ridley Scott",
-    stars: ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen "],
+    stars: "Russell Crowe, Joaquin Phoenix, Connie Nielsen",
     dateOfRelease: 2000,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818969/ironflix/IMG_5348_reizka.jpg",
@@ -247,7 +247,7 @@ const movies = [
   {
     title: "Pirates of the Caribbean: Dead Man's Chest ",
     director: "Gore Verbinski",
-    stars: ["Johnny Depp", "Orlando Bloom", "Keira Knightley"],
+    stars: "Johnny Depp, Orlando Bloom, Keira Knightley",
     dateOfRelease: 2006,
     coverPic:
       "https://res.cloudinary.com/dgmm3pkuc/image/upload/v1617818913/ironflix/IMG_5341_zu5uvu.jpg",

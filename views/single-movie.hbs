@@ -53,3 +53,9 @@
 <a href="/movies/{{this.singleMovie._id}}/addToMyList">&#10133; Add to My List</a>
 
 {{/if}}
+
+{{#if isOwner}}
+
+<a href="/movies/{{this.singleMovie._id}}/deleteFromCollection">&#10134; Remove this movie from Collection</a>
+
+{{/if}}

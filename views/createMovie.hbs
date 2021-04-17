@@ -1,1 +1,36 @@
 <h2>Want to contribute adding a movie to the data base?</h2>
+
+
+
+<form method="POST" action="/createMovie" enctype="multipart/form-data">
+
+  <label>Title</label>
+  <input type="text" name="title" value="{{title}}" placeholder="title" required>
+
+  <label>Director</label>
+  <input type="text" name="director" value="{{director}}" placeholder="director">
+
+  <label>Stars</label>
+  <input type="text" name="stars" value="{{stars}}" placeholder="stars">
+
+  <label>Date of release</label>
+  <input type="text" name="dateOfRelease" value="{{dateOfRelease}}" placeholder="date of release">
+
+  <label>Cover Pic</label>
+  <input type="file" name="coverPic" value="{{coverPic}}" placeholder="cover pic" required>
+
+  <label>Description</label>
+  <input type="text" name="description" value="{{description}}" placeholder="description">
+
+  <label>Did you know</label>
+  <input type="text" name="didYouKnow" value="{{didYouKnow}}" placeholder="did you know">
+
+  <label>Trailer link</label>
+  <input type="text" name="trailerLink" value="{{trailerLink}}" placeholder="trailer link">
+
+  <button type="submit">Add movie</button>
+</form>
+
+{{#if errorMessage}}
+<p>{{errorMessage}}</p>
+{{/if}}

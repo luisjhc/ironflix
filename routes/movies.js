@@ -22,18 +22,30 @@ router.get("/", isLoggedIn, (req, res, next) => {
 // Single Movie Page
 
 router.get("/:movieId", isLoggedIn, (req, res) => {
-  Movie.findOne({ _id: req.params.movieId }).then((singleMovie) => {
-    if (!singleMovie) {
-      return res.redirect("/movies");
-    }
+  Movie.findOne({ _id: req.params.movieId })
+    .populate("owner")
+    .then((singleMovie) => {
+      if (!singleMovie) {
+        return res.redirect("/movies");
+      }
 
-    let isInFavouriteList;
-    if (req.session.user.favouriteList.includes(singleMovie._id.toString())) {
-      isInFavouriteList = true;
-    }
+      // To check if the movie is in My List
 
-    res.render("single-movie", { singleMovie, isInFavouriteList });
-  });
+      let isInFavouriteList;
+      if (req.session.user.favouriteList.includes(singleMovie._id.toString())) {
+        isInFavouriteList = true;
+      }
+
+      // To check if the user is who uploaded the movie, so he can delete it
+
+      let isOwner = false;
+
+      if (singleMovie.owner._id.toString() === req.session.user._id) {
+        isOwner = true;
+      }
+
+      res.render("single-movie", { singleMovie, isInFavouriteList, isOwner });
+    });
 });
 
 // Add to my list feature
@@ -69,6 +81,21 @@ router.get("/:movieId/deleteFromList", isLoggedIn, (req, res) => {
       req.session.user = updatedUser;
       return res.redirect(`/movies/${singleMovie._id}`);
     });
+  });
+});
+
+//Remove movie from collection
+
+router.get("/:movieId/deleteFromCollection", isLoggedIn, (req, res) => {
+  Movie.findById(req.params.movieId).then((movieFound) => {
+    if (!movieFound) {
+      return res.redirect("/");
+    }
+
+    Movie.findByIdAndDelete(movieFound._id).then(() => {
+      return res.redirect("/");
+    });
+    // Movie = updatedCollection;
   });
 });
 
