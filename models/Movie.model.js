@@ -60,10 +60,6 @@ const movieSchema = new Schema({
   owner: {
     type: Schema.Types.ObjectId,
     ref: "User",
-<<<<<<< HEAD
-=======
-    // default: "606f5f3cd08d213192b06ec0",
->>>>>>> dev
   },
 });
 
