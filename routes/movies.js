@@ -25,8 +25,6 @@ router.get("/:movieId", isLoggedIn, (req, res) => {
   Movie.findOne({ _id: req.params.movieId })
     .populate("owner")
     .then((singleMovie) => {
-      console.log(singleMovie);
-      console.log(req.session.user._id);
       if (!singleMovie) {
         return res.redirect("/movies");
       }
