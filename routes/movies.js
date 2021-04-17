@@ -45,7 +45,22 @@ router.get("/:movieId", isLoggedIn, (req, res) => {
         isOwner = true;
       }
 
-      res.render("single-movie", { singleMovie, isInFavouriteList, isOwner });
+      // Ratings
+
+      const sum = singleMovie.ratings.reduce((acc, val) => {
+        return acc + val;
+      }, 0);
+
+      // sum ? -> checks if sum is not 0
+
+      const rating = sum ? sum / singleMovie.ratings.length : 0;
+
+      res.render("single-movie", {
+        singleMovie,
+        isInFavouriteList,
+        isOwner,
+        rating,
+      });
     });
 });
 
@@ -97,6 +112,38 @@ router.get("/:movieId/deleteFromCollection", isLoggedIn, (req, res) => {
       return res.redirect("/");
     });
     // Movie = updatedCollection;
+  });
+});
+
+// Route for Ratings POST request:
+function movieExists(req, res, next) {
+  Movie.findById(req.params.movieId).then((movieFound) => {
+    if (!movieFound) {
+      return res.redirect("/");
+    }
+    req.movie = movieFound;
+    next();
+  });
+}
+
+router.post("/:movieId/rating", isLoggedIn, movieExists, (req, res) => {
+  const rating = +req.body.rating;
+  if (!rating) {
+    return res.redirect("/");
+  }
+  if (rating > 5 || rating < 1) {
+    return res.redirect("/");
+  }
+
+  Movie.findByIdAndUpdate(
+    req.movie._id,
+    {
+      $push: { ratings: rating },
+    },
+    { new: true }
+  ).then((updatedRating) => {
+    console.log(updatedRating);
+    res.redirect(`/movies/${req.movie._id}`);
   });
 });
 
