@@ -238,7 +238,7 @@ input[type="email"] {
 }
 
 .profile-buttons {
-  margin-top: 50px;
+  margin: 50px 0px;
 }
 
 .profile-buttons a {
@@ -320,7 +320,7 @@ input[type="email"] {
 }
 
 .profile-edit-buttons {
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .profile-edit-buttons a {
@@ -350,9 +350,10 @@ input[type="email"] {
 .background-image {
   background-image: url("/images/background15.jpeg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .edit-profile-pic-container {
@@ -415,6 +416,7 @@ input[type="email"] {
 
 .edit-profile-pic-buttons {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .edit-profile-pic-buttons a {
@@ -445,7 +447,8 @@ input[type="email"] {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  background-position: center;
+  /* height: 100vh; */
 }
 
 .moviesPage-container {
