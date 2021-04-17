@@ -568,8 +568,9 @@ input[type="email"] {
   display: flex;
   flex-direction: row;
   justify-items: center;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .single-movie-image {
@@ -577,6 +578,7 @@ input[type="email"] {
   flex-direction: column;
   align-items: flex-start;
   width: 400px;
+  margin-top: 1.5rem;
 }
 
 .single-movie-image img {
