@@ -30,34 +30,28 @@
           <h4>Did You Know?</h4>
           <p>{{this.didYouKnow}}</p>
 
+          {{#if ../rating}}
+          <h4>This Movie is rated as {{../rating}} &#x2B50;stars</h4>
+          {{/if}}
+          <form method="POST" action="/movies/{{this._id}}/rating">
+            <label for="rating">How awesome was this Movie?</label>
+            <select name="rating" id="rating">
+              <option value="1">2&#x2B50;</option>
+              <option value="2">2&#x2B50;</option>
+              <option value="3">3&#x2B50;</option>
+              <option value="4">4&#x2B50;</option>
+              <option value="5">5&#x2B50;</option>
+            </select>
+
+            <button type="submit">Create Rating</button>
+          </form>
+
           <h4>Would you like to enjoy this movie with your friends?</h4>
           <p>Just join the watch party together</p>
           <a href="https://meet.jit.si/{this._id} ">&#x1F4FA;Join</a>
+
         </div>
 
-        {{#if ../rating}}
-        <h4>This Movie is rated as {{../rating}} &#x2B50;stars</h4>
-        {{/if}}
-
-
-        <form method="POST" action="/movies/{{this._id}}/rating">
-          <label for="rating">How awesome was this Movie?</label>
-          <select name="rating" id="rating">
-            <option value="1">2&#x2B50;</option>
-            <option value="2">2&#x2B50;</option>
-            <option value="3">3&#x2B50;</option>
-            <option value="4">4&#x2B50;</option>
-            <option value="5">5&#x2B50;</option>
-          </select>
-
-          <button type="submit">Create Rating</button>
-        </form>
-
-
-
-        <h4>Would you like to enjoy this movie with your friends?</h4>
-        <p>Just join the watch party together</p>
-        <a href="https://meet.jit.si/{this._id} ">&#x1F4FA; Join</a>
         <div class="movie-trailer">
           {{!-- <iframe width="420" height="315" src="{{this.trailerLink}}controls=1">
           </iframe> --}}
