@@ -1,8 +1,6 @@
-<h2>Want to contribute adding a movie to the data base?</h2>
+<h2>Want to contribute adding a Movie to our Collection?</h2>
 
-
-
-<form method="POST" action="/createMovie" enctype="multipart/form-data">
+<form class="createMovie-form" method="POST" action="/createMovie" enctype="multipart/form-data">
 
   <label>Title</label>
   <input type="text" name="title" value="{{title}}" placeholder="title" required>
@@ -28,8 +26,14 @@
   <label>Trailer link</label>
   <input type="text" name="trailerLink" value="{{trailerLink}}" placeholder="trailer link">
 
-  <button type="submit">Add movie</button>
+  <button type="submit">&#127916;Create movie</button>
 </form>
+
+<div class="logout-profile-buttons">
+  <a href="/auth/logout">Log Out</a>
+  <a href="/profile">My Profile</a>
+  <a href="/movies">All Movies</a>
+</div>
 
 {{#if errorMessage}}
 <p>{{errorMessage}}</p>
