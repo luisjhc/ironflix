@@ -25,7 +25,7 @@ router.get("/:movieId", isLoggedIn, (req, res) => {
   Movie.findOne({ _id: req.params.movieId })
     .populate("owner")
     .then((singleMovie) => {
-      console.log(singleMovie);
+      //console.log(singleMovie);
       if (!singleMovie) {
         return res.redirect("/movies");
       }
@@ -53,7 +53,8 @@ router.get("/:movieId", isLoggedIn, (req, res) => {
 
       // sum ? -> checks if sum is not 0
 
-      const rating = sum ? sum / singleMovie.ratings.length : 0;
+      let rating = sum ? sum / singleMovie.ratings.length : 0;
+      rating = Math.round(rating * 10) / 10;
 
       res.render("single-movie", {
         singleMovie,
@@ -142,7 +143,7 @@ router.post("/:movieId/rating", isLoggedIn, movieExists, (req, res) => {
     },
     { new: true }
   ).then((updatedRating) => {
-    console.log(updatedRating);
+    //console.log(updatedRating);
     res.redirect(`/movies/${req.movie._id}`);
   });
 });
