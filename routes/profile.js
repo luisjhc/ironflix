@@ -11,7 +11,7 @@ router.get("/", isLoggedIn, (req, res) => {
     .populate("favouriteList")
     .then((userFound) => {
       res.render("profile", { user: userFound });
-      console.log(userFound);
+      //console.log(userFound);
     });
 });
 
