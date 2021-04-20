@@ -6,7 +6,6 @@
     <div class="createMovie-form">
 
       <form class="createMovie-form" method="POST" action="/createMovie" enctype="multipart/form-data">
-
         <label>Title</label>
         <input type="text" name="title" value="{{title}}" placeholder="title" required>
 
@@ -18,9 +17,8 @@
 
         <label>Date of release</label>
         <input type="text" name="dateOfRelease" value="{{dateOfRelease}}" placeholder="date of release">
-
         <label>Cover Pic</label>
-        <input type="file" name="coverPic" value="{{coverPic}}" placeholder="cover pic" required>
+        <input id="coverPic" type="file" name="coverPic" value="{{coverPic}}" placeholder="cover pic" required>
 
         <label>Description</label>
         <input type="text" name="description" value="{{description}}" placeholder="description">
@@ -30,9 +28,9 @@
 
         <label>Trailer link</label>
         <input type="text" name="trailerLink" value="{{trailerLink}}" placeholder="trailer link">
-
         <button type="submit">&#127916;Create movie</button>
       </form>
+
     </div>
 
     <div class="logout-profile-buttons">

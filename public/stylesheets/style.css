@@ -727,3 +727,65 @@ footer {
   justify-items: center;
   align-items: center;
 }
+
+.createMovie-form label {
+  display: block;
+  text-align: center;
+  width: 135px;
+  padding: 5px;
+  background-color: rgba(254, 249, 239, 0.7);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 4px rgba(23, 195, 178, 0.7);
+  margin: 5px;
+}
+
+#coverPic {
+  margin: 10px;
+}
+
+.createMovie-form button {
+  font-size: 20px;
+  color: #fef9efff;
+  background-color: rgb(254, 109, 115);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 0 15px 4px rgba(254, 109, 115, 0.7);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.createMovie-form button:hover {
+  background-color: #ffcb77ff;
+  color: #fe6d73ff;
+  box-shadow: 0 0 15px 4px #ffcb77ff;
+}
+
+.logout-profile-buttons {
+  margin: 50px 0;
+}
+
+.logout-profile-buttons a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fe6d73ff;
+  background-color: rgb(255, 203, 119);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  margin: 30px;
+  box-shadow: 0 0 15px 4px rgba(255, 203, 119, 0.7);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.logout-profile-buttons a:hover {
+  background-color: #fe6d73ff;
+  color: #ffcb77ff;
+  box-shadow: 0 0 15px 4px #fe6d73ff;
+}
