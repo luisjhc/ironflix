@@ -1,40 +1,49 @@
-<h2>Want to contribute adding a Movie to our Collection?</h2>
+<div class="moviesPage-background-img">
+  <div class="SingleMovie-container">
 
-<form class="createMovie-form" method="POST" action="/createMovie" enctype="multipart/form-data">
+    <h2>Want to contribute adding a Movie to our Collection?</h2>
 
-  <label>Title</label>
-  <input type="text" name="title" value="{{title}}" placeholder="title" required>
+    <div class="createMovie-form">
 
-  <label>Director</label>
-  <input type="text" name="director" value="{{director}}" placeholder="director">
+      <form class="createMovie-form" method="POST" action="/createMovie" enctype="multipart/form-data">
 
-  <label>Stars</label>
-  <input type="text" name="stars" value="{{stars}}" placeholder="stars">
+        <label>Title</label>
+        <input type="text" name="title" value="{{title}}" placeholder="title" required>
 
-  <label>Date of release</label>
-  <input type="text" name="dateOfRelease" value="{{dateOfRelease}}" placeholder="date of release">
+        <label>Director</label>
+        <input type="text" name="director" value="{{director}}" placeholder="director">
 
-  <label>Cover Pic</label>
-  <input type="file" name="coverPic" value="{{coverPic}}" placeholder="cover pic" required>
+        <label>Stars</label>
+        <input type="text" name="stars" value="{{stars}}" placeholder="stars">
 
-  <label>Description</label>
-  <input type="text" name="description" value="{{description}}" placeholder="description">
+        <label>Date of release</label>
+        <input type="text" name="dateOfRelease" value="{{dateOfRelease}}" placeholder="date of release">
 
-  <label>Did you know</label>
-  <input type="text" name="didYouKnow" value="{{didYouKnow}}" placeholder="did you know">
+        <label>Cover Pic</label>
+        <input type="file" name="coverPic" value="{{coverPic}}" placeholder="cover pic" required>
 
-  <label>Trailer link</label>
-  <input type="text" name="trailerLink" value="{{trailerLink}}" placeholder="trailer link">
+        <label>Description</label>
+        <input type="text" name="description" value="{{description}}" placeholder="description">
 
-  <button type="submit">&#127916;Create movie</button>
-</form>
+        <label>Did you know</label>
+        <input type="text" name="didYouKnow" value="{{didYouKnow}}" placeholder="did you know">
 
-<div class="logout-profile-buttons">
-  <a href="/auth/logout">Log Out</a>
-  <a href="/profile">My Profile</a>
-  <a href="/movies">All Movies</a>
+        <label>Trailer link</label>
+        <input type="text" name="trailerLink" value="{{trailerLink}}" placeholder="trailer link">
+
+        <button type="submit">&#127916;Create movie</button>
+      </form>
+    </div>
+
+    <div class="logout-profile-buttons">
+      <a href="/auth/logout">Log Out</a>
+      <a href="/profile">My Profile</a>
+      <a href="/movies">All Movies</a>
+    </div>
+
+    {{#if errorMessage}}
+    <p>{{errorMessage}}</p>
+    {{/if}}
+
+  </div>
 </div>
-
-{{#if errorMessage}}
-<p>{{errorMessage}}</p>
-{{/if}}
