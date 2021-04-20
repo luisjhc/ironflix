@@ -4,4 +4,5 @@
 
 ### Create an account:
 
-> > to have full access to our marvelous Movie Lybrary :heavy_check_mark:
+- to have full access to our marvelous Movie Library :heavy_check_mark:
+- to contribute to our Movie Collection, by adding some great movie yourself :heavy_plus_sign:
