@@ -703,3 +703,17 @@ footer {
 }
 
 /* Create movie page */
+
+.createMovie-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.createMovie-form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
