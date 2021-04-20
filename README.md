@@ -14,7 +14,7 @@
 
 * to enjoy the movies with your friends, simply by joining the Watch Party together :tv:
 
-![userPage](/images/userPage.png)
+![userPage](/public/images/userPage.png)
 
 **[:popcorn: Link to the website](https://iron-flix.herokuapp.com/)**
 
