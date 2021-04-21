@@ -32,6 +32,10 @@ router.post("/", fileUploader.single("coverPic"), isLoggedIn, (req, res) => {
         errorMessage: "This movie is already in our collection",
       });
     }
+
+    const newLink = trailerLink.replace("watch?v=", "embed/");
+    // console.log(newLink);
+
     return Movie.create({
       title,
       director,
@@ -41,7 +45,7 @@ router.post("/", fileUploader.single("coverPic"), isLoggedIn, (req, res) => {
       owner: req.session.user._id,
       description,
       didYouKnow,
-      trailerLink,
+      trailerLink: newLink,
     }).then(() => {
       res.redirect("/movies");
     });
