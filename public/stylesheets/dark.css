@@ -19,10 +19,17 @@ body {
   min-height: 100vh;
 }
 
+.profile-edit-form label {
+  color: rgb(255, 203, 119);
+}
+
+.profile-edit-form input {
+  color: black;
+}
+
 /* All Movies Page */
 
 .moviesPage-background-img {
-  /* background-image: url("/images/smokebackground.jpeg"); */
   background-image: url("/images/background12.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,10 +45,17 @@ body {
   padding: 10px;
   font-size: 30px;
   font-weight: bold;
-  margin-top: 40px;
 }
 
 /* My List */
+
+.myList-container {
+  box-shadow: 0 0 15px 4px rgba(23, 195, 178, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  background-color: transparent;
+  margin-top: 10px;
+}
 
 .myList-header {
   color: rgb(255, 203, 119);
@@ -85,4 +99,21 @@ body {
   border-radius: 20px;
   padding: 15px;
   background-color: transparent;
+}
+
+/* Create Movie page */
+
+.createMovie-form {
+  box-shadow: 0 0 15px 4px rgba(23, 195, 178, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.createMovie-form input {
+  color: black;
+}
+
+.createMovie-form label {
+  color: rgb(255, 203, 119);
 }

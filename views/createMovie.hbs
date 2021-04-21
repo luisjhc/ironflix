@@ -3,9 +3,13 @@
 
     <h2>Want to contribute adding a Movie to our Collection?</h2>
 
-    <div class="createMovie-form">
+    <div>
 
       <form class="createMovie-form" method="POST" action="/createMovie" enctype="multipart/form-data">
+
+        <label>Cover Pic</label>
+        <input id="coverPic" type="file" name="coverPic" value="{{coverPic}}" placeholder="cover pic" required>
+
         <label>Title</label>
         <input type="text" name="title" value="{{title}}" placeholder="title" required>
 
@@ -17,8 +21,6 @@
 
         <label>Date of release</label>
         <input type="text" name="dateOfRelease" value="{{dateOfRelease}}" placeholder="date of release">
-        <label>Cover Pic</label>
-        <input id="coverPic" type="file" name="coverPic" value="{{coverPic}}" placeholder="cover pic" required>
 
         <label>Description</label>
         <input type="text" name="description" value="{{description}}" placeholder="description">

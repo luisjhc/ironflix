@@ -238,6 +238,7 @@ input[type="email"] {
 
 .profileImage {
   margin-top: 60px;
+  margin-bottom: 10px;
   width: 150px;
   border-radius: 80px;
 }
@@ -250,10 +251,22 @@ input[type="email"] {
   padding: 10px;
   font-size: 30px;
   font-weight: bold;
-  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 /* My List styling */
+
+.myList-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0 0 15px 4px rgba(23, 195, 178, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgba(254, 249, 239, 0.5);
+  margin-bottom: 10px;
+}
 
 .myList-header {
   color: #17c3b2ff;
@@ -263,6 +276,12 @@ input[type="email"] {
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
+  margin-top: 5px;
+}
+
+.myList-links {
+  list-style-type: none;
+  padding: 5px 0px;
 }
 
 .myList-links a {
@@ -306,10 +325,6 @@ input[type="email"] {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-}
-
-.profile-container h3 {
-  margin-top: 20px;
 }
 
 .profile-edit-form {
@@ -726,6 +741,10 @@ footer {
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  box-shadow: 0 0 15px 4px rgba(23, 195, 178, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgba(254, 249, 239, 0.5);
 }
 
 .createMovie-form label {
@@ -742,6 +761,17 @@ footer {
 
 #coverPic {
   margin: 10px;
+  font-size: 16px;
+  color: #fef9efff;
+  background-color: rgb(254, 109, 115);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  margin: 15px;
+  box-shadow: 0 0 15px 4px rgba(254, 109, 115, 0.7);
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 
 .createMovie-form button {

@@ -15,12 +15,14 @@
 
     {{/if}}
 
-    <h3 class="myList-header">&#10084; My list:</h3>
-    {{#each favouriteList}}
-    <li class="myList-links">
-      <a href="/movies/{{this._id}}">{{this.title}}</a>
-    </li>
-    {{/each}}
+    <div class="myList-container">
+      <h3 class="myList-header">&#10084; My list:</h3>
+      {{#each favouriteList}}
+      <li class="myList-links">
+        <a href="/movies/{{this._id}}">{{this.title}}</a>
+      </li>
+      {{/each}}
+    </div>
 
     <div class="profile-buttons">
 
