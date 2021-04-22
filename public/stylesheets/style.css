@@ -819,3 +819,26 @@ footer {
   color: #ffcb77ff;
   box-shadow: 0 0 15px 4px #fe6d73ff;
 }
+
+/* Search button */
+
+.search-btn {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fe6d73ff;
+  background-color: rgb(255, 203, 119);
+  border-radius: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  margin: 15px;
+  box-shadow: 0 0 15px 4px rgba(255, 203, 119, 0.7);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.search-btn:hover {
+  background-color: #fe6d73ff;
+  color: #ffcb77ff;
+  box-shadow: 0 0 15px 4px #fe6d73ff;
+}
