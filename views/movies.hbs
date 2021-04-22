@@ -11,22 +11,21 @@
       <a href="/CreateMovie">&#10133; Add Movie to Collection</a>
     </div>
 
-    <form action="/movies" method="GET" class="searchForm">
+    <form class="searchInput" action="/movies" method="GET">
       <input type="text" name="search" placeholder="Search for a title">
       <input class="search-btn" type="submit" value="search">
     </form>
 
 
-    <div class="searchedMovie">
-      {{#each searchedMovie}}
-      <div class="container-searchedMovie">
-        <img class="movieCover-img" src="{{this.coverPic}}" alt="movieCover">
-        <h3>{{this.title}}</h3>
-        <a class="view-more-btn" href="/movies/{{this.id}}">View More</a>
-      </div>
-      {{/each}}
 
+    {{#each searchedMovie}}
+    <div class="container-searchedMovie">
+      <img class="movieCover-img" src="{{this.coverPic}}" alt="movieCover">
+      <h3>{{this.title}}</h3>
+      <a class="view-more-btn" href="/movies/{{this.id}}">View More</a>
     </div>
+    {{/each}}
+
 
     <div class="allMovies">
       {{#each allMovies}}

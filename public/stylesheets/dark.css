@@ -117,3 +117,11 @@ body {
 .createMovie-form label {
   color: rgb(255, 203, 119);
 }
+
+.searchInput:nth-child(1) {
+  color: black;
+}
+
+form.searchInput input[type="text"] {
+  color: black;
+}
