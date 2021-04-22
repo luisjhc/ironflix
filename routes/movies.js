@@ -9,15 +9,32 @@ const fileUploader = require("../config/cloudinary");
 const Movie = require("../models/Movie.model");
 
 const User = require("../models/User.model");
+const { text } = require("express");
 
 // All Movies Page
+// router.get("/", isLoggedIn, (req, res, next) => {
+//   if (req.session.user) {
+//     Movie.find({}).then((allMovies) => {
+//       res.render("movies", { allMovies });
+//     });
+//   }
+// });
 router.get("/", isLoggedIn, (req, res, next) => {
-  if (req.session.user) {
+  if (req.query.search) {
+    const regex = new RegExp(escapeRegex(req.query.search), "gi");
+    Movie.find({ title: regex }).then((searchedMovie) => {
+      res.render("movies", { searchedMovie });
+      //console.log(searchedMovie);
+    });
+  } else {
     Movie.find({}).then((allMovies) => {
       res.render("movies", { allMovies });
     });
   }
 });
+function escapeRegex(text) {
+  return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+}
 
 // Single Movie Page
 
