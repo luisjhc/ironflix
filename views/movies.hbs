@@ -11,12 +11,12 @@
       <a href="/CreateMovie">&#10133; Add Movie to Collection</a>
     </div>
 
-    <form class="searchInput" action="/movies" method="GET">
-      <input type="text" name="search" placeholder="Search for a title">
-      <input class="search-btn" type="submit" value="search">
-    </form>
-
-
+    <div>
+      <form class="searchInput" action="/movies" method="GET">
+        <input type="text" name="search" placeholder="Search for a title">
+        <button class="search-btn" type="submit" value="search">&#128269; Search</button>
+      </form>
+    </div>
 
     {{#each searchedMovie}}
     <div class="container-searchedMovie">
